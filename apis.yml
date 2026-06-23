@@ -1,0 +1,54 @@
+aid: opendata-rks-gov-net
+name: opendata.rks-gov.net (Kosovo Open Data) [offline]
+description: >-
+  opendata.rks-gov.net (RKS Open Data) was the national government open-data portal for the Republic of
+  Kosovo, historically running CKAN (~v2.7). As of mid-2025 the hostname no longer resolves (NXDOMAIN) and
+  the portal is offline; the last Internet Archive snapshots are from June 2025. It is cataloged here as
+  historical pending restoration. Sectoral government open-data services remain available (e.g. Kosovo
+  Customs at dogana.rks-gov.net/OpenData and the national geoportal at geoportal.rks-gov.net).
+kind: government
+x-status: offline
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/opendata-rks-gov-net/refs/heads/main/apis.yml
+tags:
+  - Open Data
+  - CKAN
+  - Data Catalog
+  - Government Data
+  - National Government
+  - Kosovo
+  - Europe
+  - Offline
+created: '2026-06-23'
+modified: '2026-06-23'
+specificationVersion: '0.19'
+apis:
+  - aid: opendata-rks-gov-net:catalog
+    name: RKS Open Data CKAN Action API (historical)
+    description: >-
+      Historical CKAN Action API for Kosovo's national open-data portal. Platform confirmed as CKAN ~2.7
+      from archived snapshots. The canonical CKAN endpoint path would be /api/3/action/, but the host is
+      currently offline (NXDOMAIN) and no live or archived JSON API capture exists.
+    humanURL: https://opendata.rks-gov.net/en/
+    baseURL: https://opendata.rks-gov.net/api/3/action
+    tags:
+      - CKAN
+      - Action API
+      - Open Data
+      - Catalog
+      - Historical
+    properties:
+      - type: Documentation
+        url: https://docs.ckan.org/en/2.7/api/
+      - type: x-status
+        url: https://opendata.rks-gov.net/en/
+      - type: x-archive
+        url: https://web.archive.org/web/2025*/opendata.rks-gov.net
+common:
+  - type: Website
+    url: https://opendata.rks-gov.net/en/
+  - type: Review
+    url: review.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

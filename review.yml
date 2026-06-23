@@ -1,0 +1,22 @@
+name: opendata.rks-gov.net
+description: Kosovo Open Data portal status assessment for APIs.json cataloging.
+url: https://raw.githubusercontent.com/api-evangelist/opendata-rks-gov-net/refs/heads/main/review.yml
+created: '2026-06-23'
+modified: '2026-06-23'
+reviews:
+  - date: '2026-06-23'
+    rating: 1
+    summary: >-
+      Kosovo's national open-data portal opendata.rks-gov.net is offline. The hostname returns NXDOMAIN
+      from public DNS (Google 8.8.8.8), as does data.rks-gov.net, while the parent rks-gov.net and other
+      government subdomains resolve normally — so only this portal's DNS record is gone. The last Internet
+      Archive snapshots are from June 2025, consistent with the portal going dark mid-2025. Archived pages
+      confirm it ran CKAN (~v2.7), so the historical API would be the standard CKAN Action API at
+      /api/3/action/, but no live or archived JSON endpoint capture exists. Cataloged as historical.
+    endpoints:
+      - url: https://opendata.rks-gov.net/
+        status: nxdomain
+        note: Hostname does not resolve (NXDOMAIN); portal offline since ~mid-2025.
+      - url: https://opendata.rks-gov.net/api/3/action/package_search?rows=0
+        status: nxdomain
+        note: Inferred historical CKAN endpoint; host offline, never archived.
