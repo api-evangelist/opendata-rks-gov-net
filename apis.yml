@@ -45,6 +45,8 @@ apis:
       - type: x-archive
         url: https://web.archive.org/web/2025*/opendata.rks-gov.net
 common:
+  - type: DomainSecurity
+    url: security/opendata-rks-gov-net-domain-security.yml
   - type: Website
     url: https://opendata.rks-gov.net/en/
   - type: Review
